@@ -47,7 +47,6 @@ unsigned long ExBtnMillis;
 void CheckButtonState();
 void CheckSensor();
 void ResetSensor();
-void SendMessage();
 void BrightLED();
 
 void setup() {
@@ -116,7 +115,6 @@ void loop()
 	PreMillis = millis();
 	CheckButtonState();
 	CheckSensor();
-	SendMessage();
 	BrightLED();
 	ResetSensor();
 }
